@@ -145,7 +145,6 @@
     
     let regexDate =  /( de janeiro de | de fevereiro de | de março de | de abril de | de maio de | de junho de | de julho de | de agosto de | de setembro de | de outubro de | de novembro de | de dezembro de )/gi
 
-    console.log(text.match(regexDate));
     
     /*
     Agora crie a função que irá fazer o replace dos dados. A função será chamada
