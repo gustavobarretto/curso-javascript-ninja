@@ -135,8 +135,6 @@
                 'Nem todos os estados tem mais de 7 letras!'            
     )
     
-
-    
     /*
     Percorra o array `brasil` e verifique se o Ceará está incluído, atribuindo o
     resultado à uma variável. Se esse estado existir no array, mostrar a frase no
@@ -151,8 +149,6 @@
                 'Ceará está incluído!' :
                 'Ceará não está incluído :('
     );
-
-
     
     /*
     Percorra o array `newBrasil` e crie um novo array que some 1 no ID de cada
