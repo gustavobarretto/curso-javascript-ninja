@@ -38,8 +38,9 @@
       return this.age;
     }
 
-    addAge(older) {
-      return this.age += older;
+    addAge() {
+      this.age += arguments[0];
+      return this;
     }
   }
   
@@ -85,12 +86,8 @@
   */
   console.log( '\nNova idade das pessoas:' );
 
-  person1.addAge(5)
-  person2.addAge(3)
-  person3.addAge(10)
-
-  console.log(person1.getFullName() + ' agora tem ' + person1.getAge() + ' anos.')
-  console.log(person2.getFullName() + ' agora tem ' + person2.getAge() + ' anos.')
-  console.log(person3.getFullName() + ' agora tem ' + person3.getAge() + ' anos.')
+  console.log(person1.getFullName() + ' agora tem ' + person1.addAge(7).getAge() + ' anos.')
+  console.log(person2.getFullName() + ' agora tem ' + person2.addAge(1).getAge() + ' anos.')
+  console.log(person3.getFullName() + ' agora tem ' + person3.addAge(-5).getAge() + ' anos.')
   
 })();
